@@ -1,0 +1,37 @@
+<idea-plugin url="www.jetbrains.com">
+    <id>https://github.com/yclnycl</id>
+    <name>idea px 2 rem</name>
+    <version>1.0</version>
+    <vendor email="929464625@qq.com" url="https://github.com/yclnycl">袁春霖</vendor>
+
+    <description>一款idea快捷转换px->rem的插件</description>
+
+    <change-notes>
+        init commit
+        暂时支持alt + d快捷键转换选中的 xxxpx 为 xxxrem
+    </change-notes>
+    <idea-version since-build="131"/>
+    <depends>com.intellij.modules.lang</depends>
+
+    <extensions defaultExtensionNs="com.intellij">
+        <!-- Add your extensions here -->
+    </extensions>
+
+    <application-components>
+        <!-- Add your application components here -->
+    </application-components>
+
+    <project-components>
+        <!-- Add your project components here -->
+    </project-components>
+
+    <actions>
+        <action id="IdeaPx2Rem"
+                class="IdeaPx2Rem"
+                text="IdeaPx2Rem"
+                description="IdeaPx2Rem">
+            <keyboard-shortcut keymap="$default" first-keystroke="alt d"/>
+        </action>
+    </actions>
+
+</idea-plugin>
